@@ -59,7 +59,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="icon_final.jpg" alt="TimeSaver 로고" class="logo" />
+    <img src="assets/icon_final.jpg" alt="TimeSaver 로고" class="logo" />
     <h1>TimeSaver CPR</h1>
     <p class="subtitle">생명을 살리는 시간 기록 앱</p>
 
