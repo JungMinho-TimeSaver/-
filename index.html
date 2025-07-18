@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimeSaver CPR 앱 다운로드</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TimeSaver CPR</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
       margin: 0;
       padding: 0;
-      color: #333;
+      text-align: center;
     }
     .container {
       max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    img.logo {
+      width: 150px;
+      margin-bottom: 1rem;
     }
     h1 {
-      color: #007BFF;
-      font-size: 28px;
-      text-align: center;
+      color: #d62828;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2rem;
     }
-    .button {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      margin: 20px 0;
-      background-color: #007BFF;
+    .features {
+      text-align: left;
+      margin: 2rem 0;
+    }
+    .features li {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #d62828;
       color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      text-align: center;
+      font-size: 1.1rem;
       text-decoration: none;
+      border-radius: 8px;
+      margin-top: 2rem;
     }
-    .footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #999;
-      text-align: center;
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <img src="icon_final.jpg" alt="TimeSaver 로고" class="logo" />
     <h1>TimeSaver CPR</h1>
-    <p>119 구급대 전용 CPR 기록 보조 앱입니다.<br>
-       CPR 시간 측정, 에피네프린·제세동 기록, 알림 기능 등을 제공합니다.<br>
-       오직 <strong>구급대원</strong>만을 위한 전용 도구입니다.</p>
+    <p class="subtitle">생명을 살리는 시간 기록 앱</p>
 
-    <a class="button" href="https://example.com/timesaver_cpr_v1.apk" download>📥 앱 다운로드</a>
+    <ul class="features">
+      <li>⏱ 실시간 CPR 타이머</li>
+      <li>🧠 에피네프린 투여 알림</li>
+      <li>📋 로그 기록 및 분석</li>
+      <li>🖥 스마트폰 · 워치 연동 개발 중</li>
+    </ul>
 
-    <a class="button" href="https://example.com/guide.pdf" target="_blank">📖 사용법 보기 (PDF)</a>
+    <a href="TimeSaver.apk" class="download-btn">📥 앱 다운로드 (최신 APK)</a>
 
-    <div class="footer">
-      버전: 1.0.0<br>
-      제작: 대구북부소방서 소방교 정민호<br>
-      문의: jmh3606@gmail.com
-    </div>
+    <footer>
+      <p>제작자: 대구북부소방서 소방교 정민호</p>
+      <p>문의: jmh3606@gmail.com</p>
+    </footer>
   </div>
 </body>
 </html>
