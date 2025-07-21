@@ -35,6 +35,7 @@
     .features {
       text-align: left;
       margin: 2rem 0;
+      padding-left: 1rem;
     }
     .features li {
       margin-bottom: 0.8rem;
@@ -50,18 +51,32 @@
       border-radius: 8px;
       margin-top: 2rem;
     }
+    .video-wrapper {
+      margin-top: 2rem;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #777;
     }
-    /* 중요 고지 스타일 */
     .disclaimer {
       font-size: 0.9rem;
       color: #888;
       margin-top: 2rem;
-      text-align: center; /* 가운데 정렬 */
-      padding: 0 1rem; /* 양쪽 여백 */
+      text-align: center;
+      padding: 0 1rem;
     }
   </style>
 </head>
@@ -71,8 +86,22 @@
     <h1>TimeSaver CPR</h1>
     <p class="subtitle">119구급대 현장 CPR 기록 및 시간관리 앱</p>
 
-
     <a href="https://drive.google.com/file/d/1BHIhiYehwR68qosxmeME_1CM8I6JJv93/view?usp=sharing" class="download-btn">📥 앱 다운로드 (최신 APK)</a>
+
+    <!-- 기능 설명서 링크 -->
+    <div class="features">
+      <ul>
+        <li>
+          📄 <a href="https://drive.google.com/file/d/1rgmBHg9pCN4OiYDnqeG071YPgpAJaVWZ/view?usp=drive_link" target="_blank">
+          TimeSaver CPR 기능 설명서 (PDF)</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 영상 삽입 (Shorts 영상 iframe) -->
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/U-paQJioFR8" allowfullscreen></iframe>
+    </div>
 
     <p class="disclaimer">
       <strong>* 중요 고지:</strong> 본 앱은 의료기기가 아니며, 의학적 진단, 치료, 처방을 위한 용도로 사용될 수 없습니다.
@@ -81,7 +110,8 @@
     <footer>
       <p>제작자: 대구북부소방서 소방교 정민호</p>
       <p>문의: jmh3606@gmail.com</p>
-      <p>&copy; 2025 TimeSaver CPR. All rights reserved.</p> </footer>
+      <p>&copy; 2025 TimeSaver CPR. All rights reserved.</p>
+    </footer>
   </div>
 </body>
 </html>
