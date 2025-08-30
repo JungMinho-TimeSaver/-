@@ -78,6 +78,27 @@
       font-size: 0.8rem;
       color: #777;
     }
+    /* 업데이트 내역 스타일 */
+    .changelog {
+      text-align: left;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-top: 1px solid #eee;
+    }
+    .changelog h2 {
+      font-size: 1.1rem;
+      color: #d62828;
+      margin-bottom: 0.8rem;
+    }
+    .changelog ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .changelog li {
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
@@ -86,8 +107,24 @@
     <h1>TimeSaver CPR</h1>
     <p class="subtitle">119구급대 현장 CPR 기록 및 시간관리 앱</p>
 
-    <a href="https://drive.google.com/file/d/1BHIhiYehwR68qosxmeME_1CM8I6JJv93/view?usp=sharing" class="download-btn">📥 앱 다운로드 (최신 APK)</a>
+    <!-- APK 다운로드 버튼 -->
+    <a href="https://drive.google.com/uc?export=download&id=1YcpmBWb2Cms29P8eEjTLSfriL9_wyHAG" 
+       class="download-btn">📥 앱 다운로드 (v1.1 최신 APK)</a>
 
+    <!-- 업데이트 내역 -->
+    <div class="changelog">
+      <h2>📌 업데이트 내역</h2>
+      <ul>
+        <li><strong>v1.1 (2025-08-30)</strong><br>
+          - 🚑 소속 선택 화면 추가<br>
+          - 💉 에피네프린 버튼 기능 수정 (경과시간 표시)<br>
+          - ⚡ 초기리듬 선택 화면 추가<br>
+          - 🛠 기타 버그 수정 및 안정성 개선
+        </li>
+      </ul>
+    </div>
+
+    <!-- 기능 설명서 -->
     <div class="features">
       <ul>
         <li>
@@ -97,14 +134,17 @@
       </ul>
     </div>
 
+    <!-- 시연 영상 -->
     <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/U-paQJioFR8" allowfullscreen></iframe>
     </div>
 
+    <!-- 고지 -->
     <p class="disclaimer">
       <strong>* 중요 고지:</strong> 본 앱은 의료기기가 아니며, 의학적 진단, 치료, 처방을 위한 용도로 사용될 수 없습니다.
     </p>
 
+    <!-- 푸터 -->
     <footer>
       <p>제작자: 대구북부소방서 소방교 정민호</p>
       <p>문의: jmh3606@gmail.com</p>
