@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TimeSaver CPR</title>
+  <title>TimeSaver CPR v1.2.0</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #fff;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #f8f9fa;
       color: #333;
       margin: 0;
       padding: 0;
@@ -16,47 +16,92 @@
     .container {
       max-width: 600px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     img.logo {
-      width: 150px;
-      margin-bottom: 0.2rem;
+      width: 120px;
+      margin-bottom: 0.5rem;
+      border-radius: 20%;
     }
     h1 {
       color: #d62828;
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       margin-bottom: 0.2rem;
     }
     p.subtitle {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 1.5rem;
     }
-    .features {
-      text-align: left;
-      margin: 1rem 0 0.8rem 0;
-      padding-left: 0.8rem;
-    }
-    .features li {
-      margin-bottom: 0.4rem;
-      font-size: 0.9rem;
+    .download-section {
+      background-color: #fff5f5;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
     }
     .download-btn {
       display: inline-block;
-      padding: 0.8rem 1.4rem;
+      padding: 1rem 2rem;
       background-color: #d62828;
       color: white;
-      font-size: 0.95rem;
+      font-size: 1.1rem;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 6px;
-      margin-top: 1rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #b91d1d;
+    }
+    .version-info {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 0.5rem;
+    }
+    .changelog {
+      text-align: left;
+      margin-top: 1.5rem;
+      padding: 1.2rem;
+      background-color: #f1f3f5;
+      border-radius: 10px;
+    }
+    .changelog h2 {
+      font-size: 1.2rem;
+      color: #d62828;
+      margin-top: 0;
+      border-bottom: 2px solid #d62828;
+      padding-bottom: 0.5rem;
+    }
+    .changelog ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .changelog li.version-item {
+      margin-bottom: 1.5rem;
+    }
+    .changelog .tag {
+      display: inline-block;
+      background: #d62828;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-right: 5px;
+    }
+    .changelog li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
     .video-wrapper {
-      margin-top: 1rem;
+      margin-top: 2rem;
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
+      border-radius: 12px;
     }
     .video-wrapper iframe {
       position: absolute;
@@ -67,37 +112,19 @@
       border: none;
     }
     .disclaimer {
-      font-size: 0.8rem;
-      color: #888;
-      margin-top: 1rem;
-      text-align: center;
-      padding: 0 1rem;
+      font-size: 0.85rem;
+      color: #ba1a1a;
+      background: #fff0f0;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      line-height: 1.4;
     }
     footer {
-      margin-top: 1.5rem;
-      font-size: 0.8rem;
-      color: #777;
-    }
-    /* 업데이트 내역 스타일 */
-    .changelog {
-      text-align: left;
-      margin-top: 1.5rem;
-      padding: 1rem;
-      border-top: 1px solid #eee;
-    }
-    .changelog h2 {
-      font-size: 1.1rem;
-      color: #d62828;
-      margin-bottom: 0.8rem;
-    }
-    .changelog ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .changelog li {
-      margin-bottom: 0.8rem;
-      font-size: 0.9rem;
-      line-height: 1.5;
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+      font-size: 0.85rem;
+      color: #999;
     }
   </style>
 </head>
@@ -105,52 +132,52 @@
   <div class="container">
     <img src="assets/icon_final.jpg" alt="TimeSaver 로고" class="logo" />
     <h1>TimeSaver CPR</h1>
-    <p class="subtitle">119구급대 현장 CPR 기록 및 시간관리 앱</p>
+    <p class="subtitle">119구급대 현장 CPR 기록 및 실시간 협업 시스템</p>
 
-    <!-- APK 다운로드 버튼 -->
-    <a href="https://drive.google.com/file/d/1YcpmBWb2Cms29P8eEjTLSfriL9_wyHAG/view?usp=drive_link" 
-       class="download-btn">📥 앱 다운로드 (v1.1 최신 APK)</a>
+    <div class="download-section">
+      <a href="https://drive.google.com/file/d/1n7wV5U5Rx_V0C0hcUQiILAEtP0ZtaKvM/view?usp=sharing" 
+         class="download-btn">📥 최신 APK 다운로드 (v1.2.0)</a>
+      <p class="version-info">Build: 1.2.0+3 | Update: 2026-04-02</p>
+    </div>
 
-    <!-- 업데이트 내역 -->
     <div class="changelog">
-      <h2>📌 업데이트 내역</h2>
+      <h2>📌 주요 업데이트 내역</h2>
       <ul>
-        <li><strong>v1.1 (2025-08-30)</strong><br>
-          - 🚑 소속 선택 화면 추가<br>
-          - 💉 에피네프린 버튼 기능 수정 (경과시간 표시)<br>
-          - ⚡ 초기리듬 선택 화면 추가<br>
-          - 🛠 기타 버그 수정 및 안정성 개선
+        <li class="version-item">
+          <strong>v1.2.0 (2026-04-02) - 실시간 협업 & 지능형 로직</strong><br>
+          - 🚑 <strong>선착-후착대 QR 합류 시스템</strong>: 실시간 로그 양방향 동기화<br>
+          - 💉 <strong>ROSC 지능형 제어</strong>: 자발순환회복 시 에피네프린 알림 자동 일시정지<br>
+          - 📝 <strong>로그 정정 시스템</strong>: 시간 수정 기능 및 '(수정됨)' 투명성 표기 추가<br>
+          - 🚨 <strong>관제 연동 강화</strong>: 상황실 보드 선착/후착대 소속 명확히 구분 표시<br>
+          - 🛠 <strong>UI 최적화</strong>: 현장 시인성 개선을 위한 앱바 다이어트 및 버그 수정
+        </li>
+        <li class="version-item" style="opacity: 0.6;">
+          <strong>v1.1 (2025-08-30)</strong><br>
+          - 소속 선택 및 초기리듬 선택 화면 추가<br>
+          - 에피네프린 경과시간 표시 기능 개선
         </li>
       </ul>
     </div>
 
-    <!-- 기능 설명서 -->
-    <div class="features">
-      <ul>
-        <li>
-          📄 <a href="https://drive.google.com/file/d/1rgmBHg9pCN4OiYDnqeG071YPgpAJaVWZ/view?usp=drive_link" target="_blank">
-          TimeSaver CPR 기능 설명서 (PDF)</a>
-        </li>
-      </ul>
+    <div style="margin-top: 1.5rem; text-align: center;">
+      <a href="https://drive.google.com/file/d/1rgmBHg9pCN4OiYDnqeG071YPgpAJaVWZ/view?usp=drive_link" target="_blank" style="color: #555; text-decoration: underline; font-size: 0.9rem;">
+        📄 TimeSaver CPR v1.2.0 통합 매뉴얼 (PDF)
+      </a>
     </div>
 
-    <!-- 시연 영상 -->
     <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/U-paQJioFR8" allowfullscreen></iframe>
     </div>
 
-    <!-- 고지 -->
-    <p class="disclaimer">
-      <strong>* 중요 고지:</strong> 본 앱은 의료기기가 아니며, 의학적 진단, 치료, 처방을 위한 용도로 사용될 수 없습니다.
-    </p>
+    <div class="disclaimer">
+      <strong>⚠️ 중요 고지:</strong> 본 앱은 의료기기가 아니며, 현장 대원의 기록 보조를 목적으로 합니다. 의학적 판단은 반드시 전문가의 지도하에 이루어져야 합니다.
+    </div>
 
-    <!-- 푸터 -->
     <footer>
-      <p>제작자: 대구북부소방서 소방교 정민호</p>
+      <p>제작자: 대구중부소방서 119구급대 소방장 정민호</p>
       <p>문의: jmh3606@gmail.com</p>
-      <p>&copy; 2025 TimeSaver CPR. All rights reserved.</p>
+      <p>&copy; 2026 TimeSaver CPR. All rights reserved.</p>
     </footer>
   </div>
 </body>
 </html>
-
